@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO PROJECT</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+  <div class=" gif flex justify-center items-center h-screen">
+    <img src="https://vannilla-js-basic-project-9-video-preloader.netlify.app/preloader.gif" alt="">
+  </div>
+
+  <div class="main hidden h-screen video-container">
+    <div class=" overlay z-10 flex justify-center items-center  absolute inset-x-0 inset-y-0 bg-black/60">
+        <h1 class="text-white text-7xl font-semibold">Video Project</h1>
+        <div class=" btn absolute p-2 flex justify-between items-center  bottom-16 left-28  h-10 w-32 bg-white rounded-lg">
+            <p class=" text-[#49a6e9]">Play</p>
+            <p class=" text-[#49a6e9]">Pause</p>
+            <div class="btnOverlay duration-200 absolute inset-y-0 rounded-lg right-16 left-0 bg-[#49a6e9]"></div>
+        </div>
+    </div>
+    <video loop autoplay muted class="w-screen h-screen object-cover"  >
+        <source src="https://vannilla-js-basic-project-9-video-preloader.netlify.app/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+
+</html>
